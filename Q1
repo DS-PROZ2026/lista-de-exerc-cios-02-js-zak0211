@@ -1,0 +1,16 @@
+const listaproibida = ["jarvis", "convidado", "HP" ];
+
+const listaautorizado = [];
+
+function cadrasto() {
+for (let i = 1; i <= 3; i++) {
+    let nome = prompt ('Digite o nome do convidado:${i}');
+}
+if (listaproibida.includes(nome)){
+    console.log('ALERTA: Segurança adicionada para o visitante ${nome}');
+}else{
+    listaautorizado.push(nome);
+    console.log('${nome} entrada autorizada');
+}
+console.log("visitantes no predio",listaautorizado);
+}
